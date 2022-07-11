@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>housing</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="section">
+            <div class="container content">
+                <h1 class="title" style="font-family: Optima">Five years after hurricanes Irma and Maria, 
+                    about 68% of the housing needs in Puerto Rico have not been met</h1>
+                <h2 class="title" style="font-family: Optima">The Center for a New Economy estimates the 
+                    damage to unrepaired homes at $11.3B for uninsured or underinsured disaster victims.</h2>
+                    <img src="https://www.metro.pr/resizer/sb2QUNkXLHHbpUr9tnDTc8jUNfc=/800x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/WMWQMWDUHFCCJEI2VTZHUAVRMI.jpg" alt="">
+                    <p class="caption">As of May, about 3,646 residences remained covered with blue tarps, according to the local Department of Housing./ <em>Dennis A. Jones, Metro Puerto Rico</em></p>
+                <p>By María de los Milagros Colón Cruz</p>
+                <p>
+                    This September marks five years since hurricanes Irma and Maria touched ground in Puerto Rico. 
+                    However, <strong> this period has not been enough to guarantee that thousands of families have a safe 
+                    roof</strong> or that they recover their homes. The think tank Center for a New Economy 
+                    estimates that, as of May, the pending housing needs for uninsured victims is about $11.8B.
+                </p>
+                <p>
+                    CNE estimated that the damage to homes was more than $18.5 billion. Families in three 
+                    municipalities are still expecting more than 85% of the relief they applied for: Maricao, 
+                    in the west, and Vieques and Culebra, two smaller island east of the archipelago. <strong> Only six of the municipalities 
+                    have received more than 50% </strong>.
+                </p>
+                <div class="plot-holder">
+                        <iframe title=" Little progress has been made in repairing Puerto Rico's damaged housing 
+                        stock after Irma and María" aria-label="Map" id="datawrapper-chart-9LK38" src="https://datawrapper.dwcdn.net/9LK38/5/" 
+                        scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="376"></iframe><script t
+                        ype="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"])
+                        {var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r]
+                            .contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}(); alt="A map of Puerto Rico divided by municipalities showing the pending housing need as a percentage of damages after hurricanes Irma and María. It shows, through a color scale, which municipalities have had their housing need more or less addressed."
+                        </script>
+                    </p>
+                    <p class="caption">This is the caption at the bottom</p>
+                </div>
+                <p>
+                    “Housing is not just a place to shelter from the elements, as important as that function is. 
+                    In the words of my colleague Raúl Santiago-Bartolomei, <strong>housing provides the security and minimum 
+                    foundation needed for the material well-being of families in Puerto Rico</strong>. It is also the basic 
+                    unit that defines the social fabric of communities,” wrote  Sergio M. Marxuach, Sergio M. Marxuach 
+                    is the Policy Director and General Counsel at the Center for a New Economy.
+                </p>
+                <p>
+                    CNE's calculation includes all available aid, which is mainly composed of five programs.
+                </p>
+                <script type="text/javascript">
+                    (function() {
+                        // only want one resizer on the page
+                        if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+                        document.documentElement.className += " g-resizer-v3-init";
+                        // require IE9+
+                        if (!("querySelector" in document)) return;
+                        function resizer() {
+                            var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+                                widthById = {};
+                            elements.forEach(function(el) {
+                                var parent = el.parentNode,
+                                    width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                                    minwidth = el.getAttribute("data-min-width"),
+                                    maxwidth = el.getAttribute("data-max-width");
+                                widthById[parent.id] = width;
+                
+                                if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                                    el.style.display = "block";
+                                } else {
+                                    el.style.display = "none";
+                                }
+                            });
+                            try {
+                                if (window.parent && window.parent.$) {
+                                    window.parent.$("body").trigger("resizedcontent", [window]);
+                                }
+                                if (window.require) {
+                                    require(['foundation/main'], function() {
+                                        require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+                                            AppCommunicator.triggerResize();
+                                        });
+                                    });
+                                }
+                            } catch(e) { console.log(e); }
+                        }
+                
+                        document.addEventListener('DOMContentLoaded', resizer);
+                        // feel free to replace throttle with _.throttle, if available
+                        window.addEventListener('resize', throttle(resizer, 200));        
+                
+                        function throttle(func, wait) {
+                            // from underscore.js
+                            var _now = Date.now || function() { return new Date().getTime(); },
+                                context, args, result, timeout = null, previous = 0;
+                            var later = function() {
+                                previous = _now();
+                                timeout = null;
+                                result = func.apply(context, args);
+                                if (!timeout) context = args = null;
+                            };
+                            return function() {
+                                var now = _now(), remaining = wait - (now - previous);
+                                context = this;
+                                args = arguments;
+                                if (remaining <= 0 || remaining > wait) {
+                                    if (timeout) {
+                                        clearTimeout(timeout);
+                                        timeout = null;
+                                    }
+                                    previous = now;
+                                    result = func.apply(context, args);
+                                    if (!timeout) context = args = null;
+                                } else if (!timeout && options.trailing !== false) {
+                                    timeout = setTimeout(later, remaining);
+                                }
+                                return result;
+                            };
+                        }
+                
+                       
+                    })();
+                </script>
+                
+                <!-- Generated by ai2html v0.111.0 - 2022-07-10 00:09 -->
+                <!-- ai file: investment_graph.ai -->
+                <style media="screen,print">
+                    #g-investment_graph-box ,
+                    #g-investment_graph-box .g-artboard {
+                        margin:0 auto;
+                    }
+                    #g-investment_graph-box p {
+                        margin:0;
+                    }
+                    #g-investment_graph-box .g-aiAbs {
+                        position:absolute;
+                    }
+                    #g-investment_graph-box .g-aiImg {
+                        position:absolute;
+                        top:0;
+                        display:block;
+                        width:100% !important;
+                    }
+                    #g-investment_graph-box .g-aiSymbol {
+                        position: absolute;
+                        box-sizing: border-box;
+                    }
+                    #g-investment_graph-box .g-aiPointText p { white-space: nowrap; }
+                    #g-investment_graph-lg {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-investment_graph-lg p {
+                        font-family:arial,helvetica,sans-serif;
+                        line-height:19px;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:16px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        height:auto;
+                        position:static;
+                    }
+                    #g-investment_graph-lg .g-pstyle0 {
+                        font-weight:bold;
+                        line-height:34px;
+                        padding-bottom:12px;
+                        font-size:28px;
+                    }
+                    #g-investment_graph-lg .g-pstyle1 {
+                        height:19px;
+                    }
+                    #g-investment_graph-lg .g-pstyle2 {
+                        line-height:21px;
+                        height:21px;
+                        font-size:18px;
+                        color:rgb(241, 241, 240);
+                    }
+                    #g-investment_graph-lg .g-pstyle3 {
+                        line-height:21px;
+                        height:21px;
+                        font-size:18px;
+                    }
+                    #g-investment_graph-lg .g-pstyle4 {
+                        line-height:17px;
+                        font-size:14px;
+                        color:rgb(136,136,136);
+                    }
+                    #g-investment_graph-lg .g-cstyle0 {
+                        color:rgb(241, 241, 240);
+                    }
+                    #g-investment_graph-xs {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-investment_graph-xs p {
+                        font-family:arial,helvetica,sans-serif;
+                        line-height:19px;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:16px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        height:auto;
+                        position:static;
+                    }
+                    #g-investment_graph-xs .g-pstyle0 {
+                        font-weight:bold;
+                        line-height:31px;
+                        padding-bottom:12px;
+                        font-size:26px;
+                    }
+                    #g-investment_graph-xs .g-pstyle1 {
+                        line-height:13px;
+                        height:13px;
+                        font-size:11px;
+                    }
+                    #g-investment_graph-xs .g-pstyle2 {
+                        height:19px;
+                        color:rgb(241,241,240);
+                    }
+                    #g-investment_graph-xs .g-pstyle3 {
+                        height:19px;
+                    }
+                    #g-investment_graph-xs .g-pstyle4 {
+                        line-height:14px;
+                        font-size:12px;
+                        color:rgb(136,136,136);
+                    }
+                    #g-investment_graph-xs .g-cstyle0 {
+                        color:rgb(241,241,240);
+                    }
+                    #g-investment_graph-sm {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-investment_graph-sm p {
+                        font-family:arial,helvetica,sans-serif;
+                        line-height:19px;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:16px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        height:auto;
+                        position:static;
+                    }
+                    #g-investment_graph-sm .g-pstyle0 {
+                        font-weight:bold;
+                        line-height:34px;
+                        padding-bottom:12px;
+                        font-size:28px;
+                    }
+                    #g-investment_graph-sm .g-pstyle1 {
+                        height:19px;
+                    }
+                    #g-investment_graph-sm .g-pstyle2 {
+                        height:19px;
+                        color:rgb(241,241,240);
+                    }
+                    #g-investment_graph-sm .g-pstyle3 {
+                        line-height:21px;
+                        height:21px;
+                        font-size:18px;
+                        color:rgb(241,241,240);
+                    }
+                    #g-investment_graph-sm .g-pstyle4 {
+                        line-height:17px;
+                        font-size:14px;
+                        color:rgb(136,136,136);
+                    }
+                    #g-investment_graph-sm .g-cstyle0 {
+                        color:rgb(241,241,240);
+                    }
+                    #g-investment_graph-md {
+                        position:relative;
+                        overflow:hidden;
+                    }
+                    #g-investment_graph-md p {
+                        font-family:arial,helvetica,sans-serif;
+                        line-height:19px;
+                        opacity:1;
+                        letter-spacing:0em;
+                        font-size:16px;
+                        text-align:left;
+                        color:rgb(0,0,0);
+                        text-transform:none;
+                        padding-bottom:0;
+                        padding-top:0;
+                        mix-blend-mode:normal;
+                        font-style:normal;
+                        height:auto;
+                        position:static;
+                    }
+                    #g-investment_graph-md .g-pstyle0 {
+                        font-weight:bold;
+                        line-height:34px;
+                        padding-bottom:12px;
+                        font-size:28px;
+                    }
+                    #g-investment_graph-md .g-pstyle1 {
+                        height:19px;
+                    }
+                    #g-investment_graph-md .g-pstyle2 {
+                        height:19px;
+                        color:rgb(241,241,240);
+                    }
+                    #g-investment_graph-md .g-pstyle3 {
+                        line-height:17px;
+                        font-size:14px;
+                        color:rgb(136,136,136);
+                    }
+                    #g-investment_graph-md .g-cstyle0 {
+                        color:rgb(241,241,240);
+                    }
+                
+                </style>
+                
+                <div id="g-investment_graph-box" class="ai2html">
+                
+                    <!-- Artboard: lg -->
+                    <div id="g-investment_graph-lg" class="g-artboard" style="min-width: 930px;" data-aspect-ratio="1.645" data-min-width="930">
+                <div style="padding: 0 0 60.7865% 0;"></div>
+                        <img id="g-investment_graph-lg-img" class="g-investment_graph-lg-img g-aiImg" alt="" src="investment_graph-lg.png"/>
+                        <div id="g-ai0-1" class="g-lg g-aiAbs" style="top:-0.5307%;left:0%;width:95.2688%;">
+                            <p class="g-pstyle0">Where is the recovery investment coming from?</p>
+                            <p>Five programs funded by the federal government have relieved the need for housing repair, replacement, or relocation for the uninsured. The local administration manage two of them: R3,<span class="g-cstyle0"> </span>primarily funded by the federal Department of Housing and Urban Development (HUD), and Tu Hogar Renace, with funds from FEMA&rsquo;s Sheltering and Temporary Essential Power Program (STEP).</p>
+                        </div>
+                        <div id="g-ai0-2" class="g-lg g-aiAbs g-aiPointText" style="top:25.466%;margin-top:-11px;left:2.287%;width:164px;">
+                            <p class="g-pstyle1">SBA Disaster Loans</p>
+                        </div>
+                        <div id="g-ai0-3" class="g-lg g-aiAbs g-aiPointText" style="top:31.8441%;margin-top:-12px;left:90.7221%;width:78px;">
+                            <p class="g-pstyle2">$1.35B</p>
+                        </div>
+                        <div id="g-ai0-4" class="g-lg g-aiAbs g-aiPointText" style="top:40.325%;margin-top:-11px;left:2.287%;width:148px;">
+                            <p class="g-pstyle1">Tu Hogar Renace</p>
+                        </div>
+                        <div id="g-ai0-5" class="g-lg g-aiAbs g-aiPointText" style="top:46.5262%;margin-top:-12px;left:74.1252%;width:68px;">
+                            <p class="g-pstyle2">$1.1B</p>
+                        </div>
+                        <div id="g-ai0-6" class="g-lg g-aiAbs g-aiPointText" style="top:55.0071%;margin-top:-11px;left:2.287%;width:295px;">
+                            <p class="g-pstyle1">FEMA Individual Assistance for repairs</p>
+                        </div>
+                        <div id="g-ai0-7" class="g-lg g-aiAbs g-aiPointText" style="top:61.3852%;margin-top:-12px;left:31.0677%;width:101px;">
+                            <p class="g-pstyle2">$538.25M</p>
+                        </div>
+                        <div id="g-ai0-8" class="g-lg g-aiAbs g-aiPointText" style="top:69.8661%;margin-top:-11px;left:2.287%;width:431px;">
+                            <p class="g-pstyle1">Home Repair, Reconstruction or Relocation Program (R3)</p>
+                        </div>
+                        <div id="g-ai0-9" class="g-lg g-aiAbs g-aiPointText" style="top:76.0673%;margin-top:-12px;left:31.0627%;width:101px;">
+                            <p class="g-pstyle2">$538.18M</p>
+                        </div>
+                        <div id="g-ai0-10" class="g-lg g-aiAbs g-aiPointText" style="top:84.5482%;margin-top:-11px;left:2.287%;width:342px;">
+                            <p class="g-pstyle1">FEMA Individual Assistance for replacements</p>
+                        </div>
+                        <div id="g-ai0-11" class="g-lg g-aiAbs g-aiPointText" style="top:90.9263%;margin-top:-12px;left:9.2705%;width:91px;">
+                            <p class="g-pstyle3">$86.12M</p>
+                        </div>
+                        <div id="g-ai0-12" class="g-lg g-aiAbs" style="top:97.6448%;left:0%;width:100%;">
+                            <p class="g-pstyle4">Chart: María de los Milagros Colón Cruz &bull; Source Center for a New Economy &bull; Created with Datawrapper</p>
+                        </div>
+                    </div>
+                
+                    <!-- Artboard: xs -->
+                    <div id="g-investment_graph-xs" class="g-artboard" style="max-width: 509px;max-height: 954px" data-aspect-ratio="0.533" data-min-width="0" data-max-width="509">
+                <div style="padding: 0 0 187.5184% 0;"></div>
+                        <img id="g-investment_graph-xs-img" class="g-investment_graph-xs-img g-aiImg" alt="" src="investment_graph-xs.png"/>
+                        <div id="g-ai1-1" class="g-xs g-aiAbs" style="top:-0.3232%;left:0%;width:100%;">
+                            <p class="g-pstyle0">Where is the recovery investment coming from?</p>
+                            <p>Five programs funded by the federal government have relieved the need for housing repair, replacement, or relocation for the uninsured. The local administration manage two of them: R3,<span class="g-cstyle0"> </span>primarily funded by the federal Department of Housing and Urban Development (HUD), and Tu Hogar Renace, with funds from FEMA&rsquo;s Sheltering and Temporary Essential Power Program (STEP).</p>
+                        </div>
+                        <div id="g-ai1-2" class="g-xs g-aiAbs g-aiPointText" style="top:43.3906%;margin-top:-7.5px;left:6.3477%;width:120px;">
+                            <p class="g-pstyle1">SBA Disaster Loans</p>
+                        </div>
+                        <div id="g-ai1-3" class="g-xs g-aiAbs g-aiPointText" style="top:47.3429%;margin-top:-11px;left:83.4434%;width:73px;">
+                            <p class="g-pstyle2">$1.35B</p>
+                        </div>
+                        <div id="g-ai1-4" class="g-xs g-aiAbs g-aiPointText" style="top:54.0563%;margin-top:-7.5px;left:6.3477%;width:108px;">
+                            <p class="g-pstyle1">Tu Hogar Renace</p>
+                        </div>
+                        <div id="g-ai1-5" class="g-xs g-aiAbs g-aiPointText" style="top:58.1701%;margin-top:-11px;left:67.6012%;width:64px;">
+                            <p class="g-pstyle2">$1.1B</p>
+                        </div>
+                        <div id="g-ai1-6" class="g-xs g-aiAbs g-aiPointText" style="top:64.8835%;margin-top:-7.5px;left:6.3477%;width:210px;">
+                            <p class="g-pstyle1">FEMA Individual Assistance for repairs</p>
+                        </div>
+                        <div id="g-ai1-7" class="g-xs g-aiAbs g-aiPointText" style="top:68.8357%;margin-top:-11px;left:21.1253%;width:93px;">
+                            <p class="g-pstyle2">$538.25M</p>
+                        </div>
+                        <div id="g-ai1-8" class="g-xs g-aiAbs g-aiPointText" style="top:75.5491%;margin-top:-7.5px;left:6.3477%;width:303px;">
+                            <p class="g-pstyle1">Home Repair, Reconstruction or Relocation Program (R3)</p>
+                        </div>
+                        <div id="g-ai1-9" class="g-xs g-aiAbs g-aiPointText" style="top:79.5014%;margin-top:-11px;left:20.5091%;width:93px;">
+                            <p class="g-pstyle2">$538.18M</p>
+                        </div>
+                        <div id="g-ai1-10" class="g-xs g-aiAbs g-aiPointText" style="top:86.2147%;margin-top:-7.5px;left:6.3477%;width:242px;">
+                            <p class="g-pstyle1">FEMA Individual Assistance for replacements</p>
+                        </div>
+                        <div id="g-ai1-11" class="g-xs g-aiAbs g-aiPointText" style="top:90.167%;margin-top:-11px;left:14.1658%;width:84px;">
+                            <p class="g-pstyle3">$86.12M</p>
+                        </div>
+                        <div id="g-ai1-12" class="g-xs g-aiAbs" style="top:95.3442%;left:0%;width:97.8788%;">
+                            <p class="g-pstyle4">Chart: María de los Milagros Colón Cruz &bull; Source Center for a New Economy &bull; Created with Datawrapper</p>
+                        </div>
+                    </div>
+                
+                    <!-- Artboard: sm -->
+                    <div id="g-investment_graph-sm" class="g-artboard" style="min-width: 510px;max-width: 659px;max-height: 843px" data-aspect-ratio="0.782" data-min-width="510" data-max-width="659">
+                <div style="padding: 0 0 127.9018% 0;"></div>
+                        <img id="g-investment_graph-sm-img" class="g-investment_graph-sm-img g-aiImg" alt="" src="investment_graph-sm.png"/>
+                        <div id="g-ai2-1" class="g-sm g-aiAbs" style="top:-0.4599%;left:0%;width:95.2941%;">
+                            <p class="g-pstyle0">Where is the recovery investment coming from?</p>
+                            <p>Five programs funded by the federal government have relieved the need for housing repair, replacement, or relocation for the uninsured. The local administration manage two of them: R3,<span class="g-cstyle0"> </span>primarily funded by the federal Department of Housing and Urban Development (HUD), and Tu Hogar Renace, with funds from FEMA&rsquo;s Sheltering and Temporary Essential Power Program (STEP).</p>
+                        </div>
+                        <div id="g-ai2-2" class="g-sm g-aiAbs g-aiPointText" style="top:32.8013%;margin-top:-11px;left:4.1704%;width:164px;">
+                            <p class="g-pstyle1">SBA Disaster Loans</p>
+                        </div>
+                        <div id="g-ai2-3" class="g-sm g-aiAbs g-aiPointText" style="top:38.3203%;margin-top:-11px;left:88.4026%;width:73px;">
+                            <p class="g-pstyle2">$1.35B</p>
+                        </div>
+                        <div id="g-ai2-4" class="g-sm g-aiAbs g-aiPointText" style="top:45.6789%;margin-top:-11px;left:4.1704%;width:148px;">
+                            <p class="g-pstyle1">Tu Hogar Renace</p>
+                        </div>
+                        <div id="g-ai2-5" class="g-sm g-aiAbs g-aiPointText" style="top:51.0531%;margin-top:-12px;left:8.6503%;width:42px;">
+                            <p class="g-pstyle3">1.1B</p>
+                        </div>
+                        <div id="g-ai2-6" class="g-sm g-aiAbs g-aiPointText" style="top:51.1978%;margin-top:-11px;left:71.863%;width:64px;">
+                            <p class="g-pstyle2">$1.1B</p>
+                        </div>
+                        <div id="g-ai2-7" class="g-sm g-aiAbs g-aiPointText" style="top:58.4031%;margin-top:-11px;left:4.1704%;width:295px;">
+                            <p class="g-pstyle1">FEMA Individual Assistance for repairs</p>
+                        </div>
+                        <div id="g-ai2-8" class="g-sm g-aiAbs g-aiPointText" style="top:63.922%;margin-top:-11px;left:26.8757%;width:93px;">
+                            <p class="g-pstyle2">$538.25M</p>
+                        </div>
+                        <div id="g-ai2-9" class="g-sm g-aiAbs g-aiPointText" style="top:71.2806%;margin-top:-11px;left:4.1704%;width:431px;">
+                            <p class="g-pstyle1">Home Repair, Reconstruction or Relocation Program (R3)</p>
+                        </div>
+                        <div id="g-ai2-10" class="g-sm g-aiAbs g-aiPointText" style="top:76.7996%;margin-top:-11px;left:26.8665%;width:93px;">
+                            <p class="g-pstyle2">$538.18M</p>
+                        </div>
+                        <div id="g-ai2-11" class="g-sm g-aiAbs g-aiPointText" style="top:84.0049%;margin-top:-11px;left:4.1704%;width:342px;">
+                            <p class="g-pstyle1">FEMA Individual Assistance for replacements</p>
+                        </div>
+                        <div id="g-ai2-12" class="g-sm g-aiAbs g-aiPointText" style="top:89.6771%;margin-top:-11px;left:11.6109%;width:84px;">
+                            <p class="g-pstyle1">$86.12M</p>
+                        </div>
+                        <div id="g-ai2-13" class="g-sm g-aiAbs" style="top:95.0484%;left:0%;width:100%;">
+                            <p class="g-pstyle4">Chart: María de los Milagros Colón Cruz &bull; Source Center for a New Economy &bull; Created with Datawrapper</p>
+                        </div>
+                    </div>
+                
+                    <!-- Artboard: md -->
+                    <div id="g-investment_graph-md" class="g-artboard" style="min-width: 660px;max-width: 929px;max-height: 706px" data-aspect-ratio="1.316" data-min-width="660" data-max-width="929">
+                <div style="padding: 0 0 75.9956% 0;"></div>
+                        <img id="g-investment_graph-md-img" class="g-investment_graph-md-img g-aiImg" alt="" src="investment_graph-md.png"/>
+                        <div id="g-ai3-1" class="g-md g-aiAbs" style="top:-0.5981%;left:0%;width:100%;">
+                            <p class="g-pstyle0">Where is the recovery investment coming from?</p>
+                            <p>Five programs funded by the federal government have relieved the need for housing repair, replacement, or relocation for the uninsured. The local administration manage two of them: R3,<span class="g-cstyle0"> </span>primarily funded by the federal Department of Housing and Urban Development (HUD), and Tu Hogar Renace, with funds from FEMA&rsquo;s Sheltering and Temporary Essential Power Program (STEP).</p>
+                        </div>
+                        <div id="g-ai3-2" class="g-md g-aiAbs g-aiPointText" style="top:31.8924%;margin-top:-11px;left:3.2226%;width:164px;">
+                            <p class="g-pstyle1">SBA Disaster Loans</p>
+                        </div>
+                        <div id="g-ai3-3" class="g-md g-aiAbs g-aiPointText" style="top:37.0761%;margin-top:-11px;left:91.2387%;width:73px;">
+                            <p class="g-pstyle2">$1.35B</p>
+                        </div>
+                        <div id="g-ai3-4" class="g-md g-aiAbs g-aiPointText" style="top:45.051%;margin-top:-11px;left:3.2226%;width:148px;">
+                            <p class="g-pstyle1">Tu Hogar Renace</p>
+                        </div>
+                        <div id="g-ai3-5" class="g-md g-aiAbs g-aiPointText" style="top:50.2347%;margin-top:-11px;left:74.5365%;width:64px;">
+                            <p class="g-pstyle2">$1.1B</p>
+                        </div>
+                        <div id="g-ai3-6" class="g-md g-aiAbs g-aiPointText" style="top:58.2097%;margin-top:-11px;left:3.2226%;width:295px;">
+                            <p class="g-pstyle1">FEMA Individual Assistance for repairs</p>
+                        </div>
+                        <div id="g-ai3-7" class="g-md g-aiAbs g-aiPointText" style="top:63.3934%;margin-top:-11px;left:30.2069%;width:93px;">
+                            <p class="g-pstyle2">$538.25M</p>
+                        </div>
+                        <div id="g-ai3-8" class="g-md g-aiAbs g-aiPointText" style="top:71.5677%;margin-top:-11px;left:3.2226%;width:431px;">
+                            <p class="g-pstyle1">Home Repair, Reconstruction or Relocation Program (R3)</p>
+                        </div>
+                        <div id="g-ai3-9" class="g-md g-aiAbs g-aiPointText" style="top:76.7514%;margin-top:-11px;left:29.8989%;width:93px;">
+                            <p class="g-pstyle2">$538.18M</p>
+                        </div>
+                        <div id="g-ai3-10" class="g-md g-aiAbs g-aiPointText" style="top:84.7263%;margin-top:-11px;left:3.2226%;width:342px;">
+                            <p class="g-pstyle1">FEMA Individual Assistance for replacements</p>
+                        </div>
+                        <div id="g-ai3-11" class="g-md g-aiAbs g-aiPointText" style="top:89.91%;margin-top:-11px;left:10.3141%;width:84px;">
+                            <p class="g-pstyle1">$86.12M</p>
+                        </div>
+                        <div id="g-ai3-12" class="g-md g-aiAbs" style="top:96.4968%;left:0%;width:100%;">
+                            <p class="g-pstyle3">Chart: María de los Milagros Colón Cruz &bull; Source Center for a New Economy &bull; </p>
+                        </div>
+                    </div>
+                </div> According to the Puerto Rican Department of Housing, hurricanes Irma and Maria
+                        caused more than $90 billion in total damages. Of those, $37.7 billion relate
+                        to housing and private property damages, 46.9 billion are from infrastructure 
+                        damages, and $6.7 billion are from economic loss, highlighted CNE.
+            </div>
+        </div>
+    </body>
+</html>
